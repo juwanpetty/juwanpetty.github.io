@@ -486,10 +486,9 @@ nav {
   z-index: 2;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  background: black; }
+  justify-content: flex-start; }
   nav a {
-    color: #FFFFFF; }
+    color: black; }
   @media screen and (max-width: 430px) {
     nav .button.color {
       color: #007AFF;
