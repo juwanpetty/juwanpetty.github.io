@@ -581,8 +581,9 @@ footer {
   width: 100%; }
 
 .footer-links {
+  width: 100%;
   display: flex;
-  align-items: flex-start; }
+  justify-content: center; }
   .footer-links li a {
     color: gray; }
   .footer-links li:not(:last-child) {
@@ -590,6 +591,7 @@ footer {
   @media screen and (max-width: 500px) {
     .footer-links {
       display: flex;
+      justify-content: flex-start;
       flex-direction: column; }
       .footer-links li:not(:last-child) {
         margin-bottom: 2rem; } }

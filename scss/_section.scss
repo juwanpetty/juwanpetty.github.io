@@ -87,8 +87,10 @@ footer {
 }
 
 .footer-links {
+    width: 100%;
+
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
 
     li {
         a {color: gray;}
@@ -100,6 +102,7 @@ footer {
 
     @media screen and (max-width: 500px) {
         display: flex;
+        justify-content: flex-start;
         flex-direction: column;
 
         li:not(:last-child) {
