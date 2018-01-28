@@ -84,5 +84,26 @@ section {
 
 footer {
     width: 100%;
-    background: #ebebeb;
+}
+
+.footer-links {
+    display: flex;
+    align-items: flex-start;
+
+    li {
+        a {color: gray;}
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+
+        li:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
 }
