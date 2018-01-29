@@ -54,7 +54,9 @@ body {
     &.nocolor {
         background: transparent;
         color: #363C45;
+    }
 
+    &.svg-nofill {
         svg {
             fill: none;
             stroke-width: 2;
