@@ -1,4 +1,4 @@
-const container = document.getElementById('codepen');
+const container = document.getElementById('js-codepen');
 
 // Create a request variable and assign a new XMLHttpRequest object to it.
 var request = new XMLHttpRequest();
