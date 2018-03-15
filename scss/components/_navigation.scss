@@ -1,0 +1,39 @@
+.navbar {
+    position: relative;
+    padding: 0.5rem 2rem;
+    @include flex(center, flex-end);
+
+    .navbar-menu {
+        position: absolute; 
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 100px; /* Need a specific value to work */
+        @include flex(center, center);
+
+        .js-menu-icon {
+            padding: 0.25rem 1rem;
+        }
+    }
+
+    .navbar-links {
+        @include flex(center, flex-end);
+
+        .nav-item  {
+            padding: 0.5rem 1rem;
+        }
+    }
+
+    .nav-link {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.075rem;
+        text-transform: uppercase;
+        color: $gray-54;
+
+        &:hover {
+            color: $gray-84;
+        }
+    }
+}

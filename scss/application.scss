@@ -6,7 +6,9 @@
 @import 'base/typography';
 
 // Components 
-@import 'components/*';
+@import 'components/navigation';
+@import 'components/section';
 
 // Responsive
-@import 'responsive/*';
+@import 'responsive/desktop';
+@import 'responsive/mobile';

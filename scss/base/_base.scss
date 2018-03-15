@@ -12,6 +12,10 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    color: $gray-84;
+}
+
 ol,ul,li {
     margin: 0;
     padding: 0;
@@ -20,4 +24,9 @@ ol,ul,li {
 
 a {
     text-decoration: none;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
 }
