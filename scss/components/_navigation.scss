@@ -1,106 +1,24 @@
 .navbar {
     position: relative;
     padding: 0.5rem 2rem;
-    @include flex(center, flex-end);
-
-    .navbar-menu {
-        position: absolute; 
-        left: 0; 
-        right: 0; 
-        margin-left: auto; 
-        margin-right: auto; 
-        width: 100px; /* Need a specific value to work */
-        @include flex(center, center);
-
-        .js-menu-icon {
-            padding: 0.25rem 1rem;
-        }
-    }
+    @include flex(center, space-between);
 
     .navbar-links {
         @include flex(center, flex-end);
 
-        .nav-item  {
+        .nav-item {
             padding: 0.5rem 1rem;
         }
     }
 
     .nav-link {
-        font-size: 12px;
-        font-weight: 700;
+        font-size: 16px;
+        font-weight: 500;
         letter-spacing: 0.075rem;
-        text-transform: uppercase;
         color: $gray-54;
 
         &:hover {
             color: $gray-84;
-        }
-    }
-}
-
-.js-menu {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-
-    background: #E6E6E6;
-    transition: height $long-transition;
-    transition-delay: 300ms;
-    transition-timing-function: $cubic;
-    will-change: height;
-
-    &.hidden {
-        height: 0vh;
-    }
-
-    .navbar {
-        height: 50px;
-    }
-}
-
-.js-body-wrapper {
-    position: relative;
-    transition: $long-transition;
-    transition-timing-function: ease-in-out;
-    transition-timing-function: cubic-bezier(1, 0, 0, 1)$cubic;
-
-    padding-bottom: 300px;
-
-    &.hidden {
-        transform: scale(0.9);
-    }
-
-    &.footer-visible {
-        transform: translateY(-300px);
-    }
-}
-
-.nav-group {
-    width: 100%;
-    max-width: 1320px;
-    height: calc(100% - 50px);
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3rem;
-    align-items: center;
-    justify-items: center;
-
-    .group-item {
-        display: flex;
-        flex-direction: column;
-
-        h1 {
-            margin-bottom: 3rem;
-        }
-
-        a {
-            color: $gray-54;
-            font-size: 18px;
-            margin-bottom: 2rem;
         }
     }
 }
