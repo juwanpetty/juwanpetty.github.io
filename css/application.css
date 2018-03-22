@@ -586,87 +586,60 @@ footer {
     z-index: -1;
     background: rgba(0, 0, 0, 0); }
 
-section {
-  margin: 0 auto;
-  margin-bottom: 3rem; }
-  section.section-wrapper {
-    width: 100%;
-    max-width: 1320px; }
-  section .section-header {
-    margin-bottom: 2rem; }
-
-.header {
+.featured-projects {
   width: 100%;
-  height: calc(100vh - 50px); }
-  .header .section-wrapper {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    height: calc(100vh - 50px); }
-    .header .section-wrapper .section-header {
-      margin-bottom: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .header .section-wrapper .section-header h1 {
-        max-width: 1000px;
-        text-align: center; }
-    .header .section-wrapper .video {
-      position: relative; }
-      .header .section-wrapper .video .video-overflow {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0; }
-        .header .section-wrapper .video .video-overflow .video-wrapper {
-          position: relative;
-          height: 100%; }
-          .header .section-wrapper .video .video-overflow .video-wrapper video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            max-width: 100%;
-            height: auto !important;
-            max-height: 100%; }
-
-.projects .section-header {
-  position: relative; }
-  .projects .section-header h1 {
+  min-height: 100vh; }
+  .featured-projects .project-item {
     width: 100%;
-    position: absolute;
-    top: 10rem;
-    left: 30%;
-    transform: rotate(90deg);
-    text-transform: uppercase;
-    font-size: 225px;
-    opacity: 0.15;
-    margin: 0;
-    transform-origin: 0% 0%; }
-.projects .projects-list {
-  position: relative;
-  z-index: 1; }
-  .projects .projects-list .project-item {
-    margin-bottom: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-    .projects .projects-list .project-item:hover img {
-      opacity: 1; }
-    .projects .projects-list .project-item img {
-      width: 400px;
-      height: 250px;
-      object-fit: cover;
-      opacity: 0;
-      display: block;
+    display: grid;
+    grid-column-gap: 8rem;
+    margin-bottom: 8rem; }
+    .featured-projects .project-item.left-align {
+      justify-items: start;
+      grid-template-columns: 33% 1fr; }
+      .featured-projects .project-item.left-align .project-item-image {
+        margin-right: 6rem; }
+    .featured-projects .project-item.right-align {
+      justify-items: end;
+      grid-template-columns: 1fr 33%; }
+      .featured-projects .project-item.right-align .project-item-image {
+        margin-left: 6rem;
+        order: 2; }
+      .featured-projects .project-item.right-align .project-item-content {
+        order: 1; }
+    .featured-projects .project-item-image {
+      width: 100%;
+      height: 500px;
       background: #eee; }
-    .projects .projects-list .project-item a {
-      color: rgba(0, 0, 0, 0.84); }
-      .projects .projects-list .project-item a h2 {
-        font-size: 40px;
-        text-align: right;
-        font-weight: 700; }
+    .featured-projects .project-item-content {
+      height: 150px;
+      font-size: 3rem;
+      font-weight: 500;
+      position: relative;
+      transform: translateY(var(--translateY));
+      will-change: transform; }
+      .featured-projects .project-item-content h2 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 120%;
+        color: #2B2B2B; }
+      .featured-projects .project-item-content p {
+        margin: 1rem 0;
+        max-width: 430px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 135%;
+        color: #5E5E5E; }
+
+.viewport {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.d-none {
+  display: none; }
 
 /*# sourceMappingURL=application.css.map */
