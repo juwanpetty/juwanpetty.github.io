@@ -662,6 +662,7 @@ section .section-header {
 .youtube {
   width: 100%;
   min-height: 100vh;
+  opacity: var(--opacity);
   display: flex;
   align-items: center;
   justify-content: center;
