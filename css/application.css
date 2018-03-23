@@ -467,8 +467,9 @@ p {
   text-transform: none; }
 
 .navbar {
+  width: 100%;
   z-index: 3;
-  position: relative;
+  position: fixed;
   padding: 0.5rem 2rem;
   display: flex;
   align-items: center;
