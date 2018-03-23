@@ -6,6 +6,8 @@
     @include flex(center, center);
     flex-direction: column;
 
+    margin-bottom: 3rem;
+
     &-wrapper {
         width: 100%;
         max-width: 900px;
@@ -23,6 +25,9 @@
         border: 1px solid #EDEDED;
         border-radius: 3px;
         padding: 0.5rem;
+
+        transform: translateY(var(--translateY));
+        will-change: transform;
 
         &-image {
             width: 100%;
