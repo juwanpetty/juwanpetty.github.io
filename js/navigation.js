@@ -49,7 +49,6 @@ function setActive(element, index){
 }
 
 
-
 let menu = document.querySelector('.js-menu'),
     menuIcon = document.querySelector('.js-menu-icon'),
     imageList = document.querySelectorAll('.image-list'),
@@ -64,7 +63,7 @@ menuIcon.addEventListener('click', function() {
         
         openNav
             .to(menu, 0.3, {height: '100vh', ease:Power1.easeOut})
-            .to(imageList, 0.5, {top: '15%', ease:Power2.easeOut}, '-=0.3');
+            .to(imageList, 0.3, {top: '15%', ease:Power2.easeOut}, '-=0.3');
     } else {
         menu.classList.add('hidden');
         closeNav

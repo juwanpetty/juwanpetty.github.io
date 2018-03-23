@@ -493,7 +493,8 @@ p {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 2; }
+  z-index: 2;
+  background: #FFFFFF; }
   .js-menu .menu-wrapper {
     position: absolute;
     top: 0;
