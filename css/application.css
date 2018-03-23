@@ -586,6 +586,23 @@ footer {
     z-index: -1;
     background: rgba(0, 0, 0, 0); }
 
+section .section-header {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  text-align: center; }
+  section .section-header h2 {
+    font-size: 36px;
+    font-weight: 700; }
+  section .section-header p {
+    font-size: 1rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 135%;
+    max-width: 430px; }
+
 .featured-projects {
   width: 100%;
   min-height: 100vh; }
@@ -641,5 +658,48 @@ footer {
 
 .d-none {
   display: none; }
+
+.youtube {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .youtube-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem; }
+  .youtube .item {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #EDEDED;
+    border-radius: 3px;
+    padding: 0.5rem; }
+    .youtube .item-image {
+      width: 100%;
+      height: 150px;
+      border-radius: 3px;
+      margin-bottom: 0.5rem;
+      background: #eee; }
+    .youtube .item-description {
+      padding: 0.5rem; }
+      .youtube .item-description-subtitle {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        font-size: 12px;
+        font-weight: 400;
+        color: #B7B7B7; }
+      .youtube .item-description-title {
+        text-align: center;
+        line-height: 135%;
+        font-size: 14px;
+        font-weight: 500;
+        color: #2b2b2b;
+        text-transform: none;
+        letter-spacing: 0; }
 
 /*# sourceMappingURL=application.css.map */
