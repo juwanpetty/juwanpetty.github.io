@@ -564,7 +564,33 @@ p {
 
 .footer {
   width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
   height: 300px; }
+  .footer > p {
+    font-size: 24px;
+    margin-left: 1rem;
+    color: #2B2B2B; }
+  .footer .footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .footer .contact h2 {
+    margin: 0;
+    font-size: 3rem;
+    color: #2B2B2B;
+    text-decoration: underline; }
+  .footer .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+    .footer .social-links a {
+      font-size: 18px;
+      color: #5E5E5E; }
+      .footer .social-links a:hover {
+        color: #2B2B2B; }
+      .footer .social-links a:not(:last-of-type) {
+        margin-right: 1rem; }
 
 section .section-header {
   width: 100%;
