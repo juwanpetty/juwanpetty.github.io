@@ -1,6 +1,7 @@
 .featured-projects {
     width: 100%;
-	min-height: 100vh;
+    min-height: 100vh;
+    padding-top: 15rem;
 
     .project-item {
         width: 100%;
@@ -64,14 +65,4 @@
             }
         }
     }
-}
-
-.viewport {
-    width: 100%;
-    height: 100vh;
-    @include flex(center, center);
-}
-
-.d-none {
-    display: none;
 }
