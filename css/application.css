@@ -404,7 +404,8 @@ html {
 
 body {
   color: rgba(0, 0, 0, 0.84);
-  position: relative; }
+  position: relative;
+  background: #ffffff; }
 
 ol, ul, li {
   margin: 0;
@@ -495,7 +496,7 @@ p {
   bottom: 0;
   left: 0;
   z-index: 2;
-  background: #FFFFFF; }
+  background: #141414; }
   .js-menu .menu-wrapper {
     position: absolute;
     top: 0;
@@ -533,9 +534,11 @@ p {
   justify-content: center;
   font-size: 2rem;
   color: white;
-  background: #eee; }
+  background: #eee;
+  opacity: 0.5; }
   .project-image.active {
-    background: #bbb; }
+    background: #eee;
+    opacity: 0.9; }
 
 .project-list {
   position: absolute;
@@ -546,7 +549,8 @@ p {
   .project-list > li {
     margin-bottom: 2rem;
     cursor: pointer;
-    color: #5E5E5E;
+    color: #FFFFFF;
+    opacity: 0.5;
     transition-duration: .25s;
     background-color: transparent; }
     .project-list > li h2 {
@@ -555,7 +559,7 @@ p {
       font-size: 3rem;
       line-height: 120%; }
     .project-list > li:hover, .project-list > li.active {
-      color: #2B2B2B; }
+      opacity: 0.9; }
 
 .footer {
   width: 100%;
@@ -577,6 +581,11 @@ section .section-header {
     margin-bottom: 1rem;
     line-height: 135%;
     max-width: 430px; }
+
+.intro {
+  background: #eee;
+  border: 1px solid black;
+  opacity: var(--opacity); }
 
 .featured-projects {
   width: 100%;
@@ -653,6 +662,7 @@ section .section-header {
   .youtube .item {
     width: 100%;
     height: 300px;
+    background: #FFFFFF;
     border: 1px solid #EDEDED;
     border-radius: 3px;
     padding: 0.5rem;

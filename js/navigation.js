@@ -10,7 +10,6 @@ let slideList = document.querySelectorAll('.project-list > li');
 
 // grabs a number of how many slides there are
 const childrenNumber = slide.length;
-console.log(childrenNumber);
 
 sliderWrapper.style.height = (childrenNumber * slideHeight) + 'px'; 
 
@@ -46,33 +45,4 @@ function setActive(element, index){
         slide.classList.remove('active');
     });
     slide[hoveredIndex].classList.add('active');
-}
-
-
-let menu = document.querySelector('.js-menu'),
-    menuIcon = document.querySelector('.js-menu-icon'),
-    imageList = document.querySelectorAll('.image-list'),
-    imageListWrapper = document.querySelectorAll('.image-list-wrapper'),
-    imageListItem = document.querySelectorAll('.project-image'),
-    openNav = new TimelineLite();
-    closeNav = new TimelineLite();
-
-menuIcon.addEventListener('click', function() {
-    if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden');
-        
-        openNav
-            .to(menu, 0.3, {height: '100vh', ease:Power1.easeOut})
-            .to(imageList, 0.3, {top: '15%', ease:Power2.easeOut}, '-=0.3');
-    } else {
-        menu.classList.add('hidden');
-        closeNav
-            .to(imageList, 0.5, {top: '100%', ease:Power2.easeOut})
-            .to(imageListWrapper, 0.5, {y: 0, ease:Power2.easeOut}, '-=0.5')
-            .to(menu, 0.3, {height: '0', ease:Power1.easeOut}, '-=0.5');
-    }
-});
-
-function onStart() {
-    console.log('Cool');
 }

@@ -33,7 +33,7 @@
     bottom: 0;
 	left: 0;
 	z-index: 2;
-	background: #FFFFFF;
+	background: #141414;
 
 	.menu-wrapper {
 		position: absolute;
@@ -82,9 +82,11 @@
 	font-size: 2rem;
 	color: white;
 	background: #eee;
+	opacity: 0.5;
 
 	&.active {
-		background: #bbb; 
+		background: #eee; 
+		opacity: 0.9;
 	}
 }
 
@@ -98,7 +100,8 @@
 	& > li {
 		margin-bottom: 2rem;
 		cursor: pointer;	
-		color: $secondary-text;
+		color: #FFFFFF;
+		opacity: 0.5;
 		
 		transition-duration: .25s;
 		background-color: transparent;
@@ -111,7 +114,7 @@
 		}
 		
 		&:hover, &.active {
-			color: $primary-text;
+			opacity: 0.9;
 		}
 	}
 }
