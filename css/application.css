@@ -757,4 +757,21 @@ section .section-header {
         text-transform: none;
         letter-spacing: 0; }
 
+.about {
+  flex-direction: column;
+  width: 100%;
+  height: inherit;
+  min-height: 75vh;
+  max-width: 1000px;
+  margin: 0 auto; }
+  .about > div {
+    margin-bottom: 3rem; }
+  .about h2 {
+    line-height: 175%; }
+    .about h2.first-bio {
+      font-size: 36px; }
+    .about h2 a {
+      color: #2B2B2B;
+      font-weight: 700; }
+
 /*# sourceMappingURL=application.css.map */
