@@ -1,15 +1,17 @@
 .about {
     flex-direction: column;
-
-    & > div {
-        margin-bottom: 3rem;
-    }
-
+    padding-top: 10rem;
     width: 100%;
     height: inherit;
     min-height: 75vh;
     max-width: 1000px;
     margin: 0 auto;
+    margin-bottom: 5rem;
+
+    & > div {
+        margin-bottom: 3rem;
+    }
+
 
     h2 {
         line-height: 175%;

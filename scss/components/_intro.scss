@@ -1,39 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:700');
 
 .intro {
-    background: #eee;
-    border: 1px solid black;
-    opacity: var(--opacity);
-
     position: relative;
-
-    .info {
-        width: 90%;
-        height: 100%;
-        top: 0;
-        position: absolute;
-        z-index: 1;
-
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-
-        @include flex(flex-start, center);
-        flex-direction: column;
-
-        color: white;
-
-        transform: translateY(var(--translateY));
-        will-change: transform;
-
-        h1 {
-            font-size: calc(64px + 2vw);
-            font-family: 'Oswald', sans-serif;
-            text-transform: uppercase;
-            line-height: 100%;
-        }
-    }
 }
 
 .video-wrapper {

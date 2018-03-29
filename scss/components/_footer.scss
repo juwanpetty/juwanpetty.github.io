@@ -2,7 +2,8 @@
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    height: 300px;
+    height: 150px;
+    @include flex(center, center);
 
     & > p {
         font-size: 24px;
@@ -14,17 +15,9 @@
         @include flex(center, space-between);
     }
 
-    .contact {
-        h2 {
-            margin: 0;
-            font-size: 3rem;
-            color: $primary-text;
-            text-decoration: underline;
-        }
-    }
-
     .social-links {
         @include flex(center, flex-start);
+        margin: 0 auto;
         
         a {
             font-size: 18px;
@@ -35,7 +28,7 @@
             }
 
             &:not(:last-of-type) {
-                margin-right: 1rem;
+                margin-right: 1.5rem;
             }
         }
     }

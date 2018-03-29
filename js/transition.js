@@ -1,22 +1,3 @@
-// INTRO SECTION
-document.querySelectorAll('.intro').forEach(function (elem) {
-
-	var modifier = elem.getAttribute('data-modifier');
-
-	basicScroll.create({
-		elem: elem,
-		from: 'bottom-bottom',
-   		to: 'bottom-middle',
-		direct: true,
-		props: {
-            '--opacity': {
-                from: .99,
-                to: .01
-            }
-        }
-    }).start(); 
-});
-
 // FEATURED SECTION
 document.querySelectorAll('.project-item-content').forEach(function (elem) {
 

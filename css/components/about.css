@@ -1,20 +1,20 @@
 /*
 Error: Undefined variable: "$primary-text".
-        on line 22 of scss/components/about.scss
+        on line 24 of scss/components/about.scss
 
-17:         &.first-bio {
-18:             font-size: 36px;
-19:         }
-20: 
-21:         a {
-22:             color: $primary-text;
-23:             font-weight: 700;
-24:         }
-25:     }
-26: }
+19:         &.first-bio {
+20:             font-size: 36px;
+21:         }
+22: 
+23:         a {
+24:             color: $primary-text;
+25:             font-weight: 700;
+26:         }
+27:     }
+28: }
 
 Backtrace:
-scss/components/about.scss:22
+scss/components/about.scss:24
 /Users/juwanpetty/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/juwanpetty/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
 /Users/juwanpetty/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -90,4 +90,4 @@ scss/components/about.scss:22
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$primary-text\".\A         on line 22 of scss/components/about.scss\A \A 17:         &.first-bio {\A 18:             font-size: 36px;\A 19:         }\A 20: \A 21:         a {\A 22:             color: $primary-text;\A 23:             font-weight: 700;\A 24:         }\A 25:     }\A 26: }"; }
+  content: "Error: Undefined variable: \"$primary-text\".\A         on line 24 of scss/components/about.scss\A \A 19:         &.first-bio {\A 20:             font-size: 36px;\A 21:         }\A 22: \A 23:         a {\A 24:             color: $primary-text;\A 25:             font-weight: 700;\A 26:         }\A 27:     }\A 28: }"; }

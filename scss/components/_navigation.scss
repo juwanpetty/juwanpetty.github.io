@@ -33,7 +33,7 @@
     bottom: 0;
 	left: 0;
 	z-index: 2;
-	background: #141414;
+	background: white;
 
 	&.visible {
 		animation: navigation-open 700ms;
@@ -137,6 +137,8 @@
 			font-weight: 500;
 			font-size: 3rem;
 			line-height: 120%;
+
+			a {color: $primary-text;}
 		}
 		
 		&:hover, &.active {
