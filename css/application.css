@@ -842,7 +842,7 @@ section .section-header {
     .faq .faq-item p {
       width: 100%;
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 500;
       color: #5E5E5E; }
 
