@@ -499,20 +499,20 @@ p {
   z-index: 2;
   background: #141414; }
   .js-menu.visible {
-    animation: navigation-open 1.5s;
+    animation: navigation-open 700ms;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(1, 0, 0, 1); }
     .js-menu.visible .image-list {
-      animation: image-list-open 1.5s;
+      animation: image-list-open 700ms;
       animation-fill-mode: forwards;
       animation-delay: 1s;
       animation-timing-function: cubic-bezier(1, 0, 0, 1); }
   .js-menu.hidden {
-    animation: navigation-close 1.5s;
+    animation: navigation-close 700ms;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(1, 0, 0, 1); }
     .js-menu.hidden .image-list {
-      animation: image-list-close 1.5s;
+      animation: image-list-close 700ms;
       animation-fill-mode: forwards;
       animation-timing-function: cubic-bezier(1, 0, 0, 1); }
   .js-menu .menu-wrapper {
@@ -829,7 +829,7 @@ section .section-header {
     margin-bottom: 10rem;
     opacity: 0.01; }
     .faq .faq-item.in-view {
-      animation: in-view 1.5s;
+      animation: in-view 1000ms;
       animation-fill-mode: forwards;
       animation-timing-function: cubic-bezier(1, 0, 0, 1); }
     .faq .faq-item h2 {

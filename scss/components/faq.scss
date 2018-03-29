@@ -10,7 +10,7 @@
         opacity: 0.01;
 
         &.in-view {
-            animation: in-view 1.5s;
+            animation: in-view 1000ms;
             animation-fill-mode: forwards;
             animation-timing-function: cubic-bezier(1, 0, 0, 1);
         }
