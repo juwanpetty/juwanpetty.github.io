@@ -741,8 +741,9 @@ section .section-header {
         margin: 0;
         font-weight: 700;
         font-size: 3rem;
-        line-height: 120%;
-        color: #2B2B2B; }
+        line-height: 120%; }
+        .featured-projects .project-item-content h2 a {
+          color: #2B2B2B; }
       .featured-projects .project-item-content p {
         margin: 1rem 0;
         max-width: 430px;
@@ -750,6 +751,8 @@ section .section-header {
         font-weight: 400;
         line-height: 135%;
         color: #5E5E5E; }
+      .featured-projects .project-item-content .bold {
+        font-weight: 700; }
 
 .youtube {
   width: 100%;
