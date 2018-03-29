@@ -35,6 +35,31 @@
 	z-index: 2;
 	background: #141414;
 
+	&.visible {
+		animation: navigation-open 1.5s;
+		animation-fill-mode: forwards;
+		animation-timing-function: cubic-bezier(1, 0, 0, 1);
+
+		.image-list {
+			animation: image-list-open 1.5s;
+			animation-fill-mode: forwards;
+			animation-delay: 1s;
+			animation-timing-function: cubic-bezier(1, 0, 0, 1);
+		}
+	}	
+
+	&.hidden {
+		animation: navigation-close 1.5s;
+		animation-fill-mode: forwards;
+		animation-timing-function: cubic-bezier(1, 0, 0, 1);
+
+		.image-list {
+			animation: image-list-close 1.5s;
+			animation-fill-mode: forwards;
+			animation-timing-function: cubic-bezier(1, 0, 0, 1);
+		}
+	}
+
 	.menu-wrapper {
 		position: absolute;
 		top: 0;
@@ -50,6 +75,7 @@
 	top: 100%;
 	right: 15%;
 	width: 350px;
+	opacity: 0.01;
 }
 
 .image-list-wrapper {
@@ -117,4 +143,44 @@
 			opacity: 0.9;
 		}
 	}
+}
+
+@keyframes navigation-open {
+    from {
+		height: 0;
+    }
+    to {
+        height: 100vh;
+    }
+}
+
+@keyframes navigation-close {
+    from {
+		height: 100vh;
+    }
+    to {
+        height: 0;
+    }
+}
+
+@keyframes image-list-open {
+    from {
+		top: 100%;
+		opacity: 0.01;
+    }
+    to {
+		top: 15%;
+		opacity: 0.99;
+    }
+}
+
+@keyframes image-list-close {
+    from {
+		top: 15%;
+		opacity: 0.99;
+    }
+    to {
+		top: 100%;
+		opacity: 0.01;
+    }
 }

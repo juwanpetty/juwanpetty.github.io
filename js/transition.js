@@ -78,22 +78,23 @@ let menu = document.querySelector('.js-menu'),
     menuIcon = document.querySelector('.js-menu-icon'),
     imageList = document.querySelectorAll('.image-list'),
     imageListWrapper = document.querySelectorAll('.image-list-wrapper'),
-    imageListItem = document.querySelectorAll('.project-image'),
-    openNav = new TimelineLite();
-    closeNav = new TimelineLite();
+    imageListItem = document.querySelectorAll('.project-image');
+    // openNav = new TimelineLite();
+	// closeNav = new TimelineLite();
+	
+	// CustomEase.create("custom", "M0,0 C1,0 0,1 1,1");
 
 menuIcon.addEventListener('click', function() {
-    if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden');
-        
-        openNav
-            .to(menu, 0.3, {height: '100vh', ease:Power1.easeOut})
-            .to(imageList, 0.3, {top: '15%', ease:Power2.easeOut}, '-=0.3');
-    } else {
-        menu.classList.add('hidden');
-        closeNav
-            .to(imageList, 0.5, {top: '100%', ease:Power2.easeOut})
-            .to(imageListWrapper, 0.5, {y: 0, ease:Power2.easeOut}, '-=0.5')
-            .to(menu, 0.3, {height: '0', ease:Power1.easeOut}, '-=0.5');
-    }
+	if (menu.classList.contains('hidden') || menu.classList.contains('visible')) {
+		if (menu.classList.contains('hidden')) {
+			menu.classList.remove('hidden');
+			menu.classList.add('visible');
+		} else {
+			menu.classList.remove('visible');
+			menu.classList.add('hidden');
+		}
+	} else {
+		// if neither is true
+		menu.classList.add('visible');
+	}
 });

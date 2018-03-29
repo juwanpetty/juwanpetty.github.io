@@ -498,6 +498,23 @@ p {
   left: 0;
   z-index: 2;
   background: #141414; }
+  .js-menu.visible {
+    animation: navigation-open 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1); }
+    .js-menu.visible .image-list {
+      animation: image-list-open 1.5s;
+      animation-fill-mode: forwards;
+      animation-delay: 1s;
+      animation-timing-function: cubic-bezier(1, 0, 0, 1); }
+  .js-menu.hidden {
+    animation: navigation-close 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1); }
+    .js-menu.hidden .image-list {
+      animation: image-list-close 1.5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(1, 0, 0, 1); }
   .js-menu .menu-wrapper {
     position: absolute;
     top: 0;
@@ -510,7 +527,8 @@ p {
   position: fixed;
   top: 100%;
   right: 15%;
-  width: 350px; }
+  width: 350px;
+  opacity: 0.01; }
 
 .image-list-wrapper {
   position: absolute;
@@ -562,6 +580,30 @@ p {
     .project-list > li:hover, .project-list > li.active {
       opacity: 0.9; }
 
+@keyframes navigation-open {
+  from {
+    height: 0; }
+  to {
+    height: 100vh; } }
+@keyframes navigation-close {
+  from {
+    height: 100vh; }
+  to {
+    height: 0; } }
+@keyframes image-list-open {
+  from {
+    top: 100%;
+    opacity: 0.01; }
+  to {
+    top: 15%;
+    opacity: 0.99; } }
+@keyframes image-list-close {
+  from {
+    top: 15%;
+    opacity: 0.99; }
+  to {
+    top: 100%;
+    opacity: 0.01; } }
 .footer {
   width: 100%;
   max-width: 1000px;
@@ -773,5 +815,40 @@ section .section-header {
     .about h2 a {
       color: #2B2B2B;
       font-weight: 700; }
+
+.faq {
+  padding-top: 10rem;
+  display: block; }
+  .faq .faq-item {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    opacity: 0.01; }
+    .faq .faq-item.in-view {
+      animation: in-view 1.5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(1, 0, 0, 1); }
+    .faq .faq-item h2 {
+      width: 100%;
+      text-align: center;
+      font-weight: 500;
+      font-size: 3rem;
+      line-height: 120%;
+      color: #2B2B2B; }
+    .faq .faq-item p {
+      width: 100%;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 500;
+      color: #5E5E5E; }
+
+@keyframes in-view {
+  from {
+    transform: translateY(200px);
+    opacity: 0.01; }
+  to {
+    transform: translateY(0);
+    opacity: 0.99; } }
 
 /*# sourceMappingURL=application.css.map */
