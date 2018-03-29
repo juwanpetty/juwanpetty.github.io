@@ -8,6 +8,10 @@
     margin: 0 auto;
     margin-bottom: 5rem;
 
+    animation: about 700ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+
     & > div {
         margin-bottom: 3rem;
     }
@@ -24,5 +28,16 @@
             color: $primary-text;
             font-weight: 700;
         }
+    }
+}
+
+@keyframes about {
+    from {
+        transform: translateY(200px);
+        opacity: 0.01;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 0.99;
     }
 }

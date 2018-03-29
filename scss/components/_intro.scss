@@ -2,6 +2,19 @@
 
 .intro {
     position: relative;
+    min-height: 50vh;
+    @include flex(center, center);
+
+    .intro-wrapper {
+        width: 100%;
+        max-width: 900px;
+
+        h1 {
+            font-size: 2vw; 
+            text-align: center;
+            line-height: 155%;
+        }
+    }
 }
 
 .video-wrapper {
