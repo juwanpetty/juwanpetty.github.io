@@ -35,7 +35,21 @@
         &-image {
             width: 100%;
             height: 500px;
-            background: #eee;
+            border: 1px solid #f2f2f2;
+
+            &.cover-left img {
+                object-position: top left;
+            }
+
+            &.cover-right img {
+                object-position: top right;
+            }
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
         }
 
         &-content {

@@ -60,10 +60,6 @@ let menu = document.querySelector('.js-menu'),
     imageList = document.querySelectorAll('.image-list'),
     imageListWrapper = document.querySelectorAll('.image-list-wrapper'),
     imageListItem = document.querySelectorAll('.project-image');
-    // openNav = new TimelineLite();
-	// closeNav = new TimelineLite();
-	
-	// CustomEase.create("custom", "M0,0 C1,0 0,1 1,1");
 
 menuIcon.addEventListener('click', function() {
 	if (menu.classList.contains('hidden') || menu.classList.contains('visible')) {

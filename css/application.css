@@ -527,7 +527,7 @@ p {
   position: fixed;
   top: 100%;
   right: 15%;
-  width: 350px;
+  width: 450px;
   opacity: 0.01; }
 
 .image-list-wrapper {
@@ -544,7 +544,7 @@ p {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 250px;
+  height: 325px;
   margin-bottom: 2rem;
   transition-timing-function: ease-in-out;
   transition-duration: .5s;
@@ -553,8 +553,12 @@ p {
   justify-content: center;
   font-size: 2rem;
   color: white;
-  background: #eee;
+  border: 1px solid #f2f2f2;
   opacity: 0.5; }
+  .project-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
   .project-image.active {
     background: #eee;
     opacity: 0.9; }
@@ -569,7 +573,7 @@ p {
     margin-bottom: 2rem;
     cursor: pointer;
     color: #FFFFFF;
-    opacity: 0.5;
+    opacity: 0.25;
     transition-duration: .25s;
     background-color: transparent; }
     .project-list > li h2 {
@@ -716,7 +720,15 @@ section .section-header {
     .featured-projects .project-item-image {
       width: 100%;
       height: 500px;
-      background: #eee; }
+      border: 1px solid #f2f2f2; }
+      .featured-projects .project-item-image.cover-left img {
+        object-position: top left; }
+      .featured-projects .project-item-image.cover-right img {
+        object-position: top right; }
+      .featured-projects .project-item-image img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%; }
     .featured-projects .project-item-content {
       height: 150px;
       font-size: 3rem;
