@@ -505,7 +505,7 @@ p {
     .js-menu.visible .image-list {
       animation: image-list-open 700ms;
       animation-fill-mode: forwards;
-      animation-delay: 1s;
+      animation-delay: 0.5s;
       animation-timing-function: cubic-bezier(1, 0, 0, 1); }
   .js-menu.hidden {
     animation: navigation-close 700ms;
@@ -804,7 +804,8 @@ section .section-header {
   .about > div {
     margin-bottom: 3rem; }
   .about h2 {
-    line-height: 175%; }
+    line-height: 175%;
+    font-weight: 400; }
     .about h2.first-bio {
       font-size: 36px; }
     .about h2 a {
