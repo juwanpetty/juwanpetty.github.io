@@ -573,6 +573,20 @@ footer {
 .navigation {
   padding: 4rem 0; }
 
+@media screen and (max-width: 1010px) {
+  .navigation, .footer {
+    padding: 2rem 0; }
+
+  .project-list {
+    grid-template-columns: repeat(2, minmax(230px, 1fr)); }
+    .project-list li {
+      width: 100%; }
+      .project-list li a {
+        padding: 0; }
+        .project-list li a:hover {
+          background: none; }
+          .project-list li a:hover .project-title {
+            color: #007AFF; } }
 @media screen and (max-width: 950px) {
   footer {
     display: flex;
@@ -591,6 +605,12 @@ footer {
         margin: 0; }
         footer .footer-links li:not(:last-child) {
           margin-bottom: 2rem; } }
+@media screen and (max-width: 650px) {
+  header .header-wrapper h1 {
+    font-size: 32px; }
+
+  .project-list {
+    grid-template-columns: repeat(1, minmax(230px, 1fr)); } }
 @media screen and (max-width: 450px) {
   header .header-wrapper h1 {
     font-size: 24px;
@@ -607,19 +627,5 @@ footer {
     grid-template-columns: 1fr; }
     .project-list li {
       width: 100%; } }
-@media screen and (max-width: 1010px) {
-  .navigation {
-    padding: 2rem 0; }
-
-  .project-list {
-    grid-template-columns: repeat(2, minmax(230px, 1fr)); }
-    .project-list li {
-      width: 100%; }
-      .project-list li a {
-        padding: 0; }
-        .project-list li a:hover {
-          background: none; }
-          .project-list li a:hover .project-title {
-            color: #007AFF; } }
 
 /*# sourceMappingURL=application.css.map */

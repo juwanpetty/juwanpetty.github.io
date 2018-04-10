@@ -1,3 +1,31 @@
+@media screen and (max-width: 1010px) {
+    .navigation, .footer {
+        padding: 2rem 0;
+    }
+
+    .project-list {
+        grid-template-columns: repeat(2, minmax(230px, 1fr));
+
+        li {
+            width: 100%;
+
+            a {
+                padding: 0;
+                
+                &:hover {
+                    background: none;
+
+                    .project-title {
+                        color: $primary-accent;
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 950px) {
     footer {
         @include flex(flex-start, flex-start);
@@ -20,6 +48,20 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        .header-wrapper {
+            h1 {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .project-list {
+        grid-template-columns: repeat(1, minmax(230px, 1fr));
     }
 }
 
@@ -52,34 +94,6 @@
 
         li {
             width: 100%;
-        }
-    }
-}
-
-@media screen and (max-width: 1010px) {
-    .navigation {
-        padding: 2rem 0;
-    }
-
-    .project-list {
-        grid-template-columns: repeat(2, minmax(230px, 1fr));
-
-        li {
-            width: 100%;
-
-            a {
-                padding: 0;
-                
-                &:hover {
-                    background: none;
-
-                    .project-title {
-                        color: $primary-accent;
-                    }
-                }
-
-                
-            }
         }
     }
 }
