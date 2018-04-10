@@ -1,14 +1,15 @@
 @import url('https://rsms.me/inter/inter-ui.css');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:500,600');
 
 html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    font-family: -apple-system, "Inter UI", sans-serif;
+    font-family: "Inter UI", -apple-system, sans-serif;
 }
 
 h1 {
-    font-family: -apple-system, "Inter UI", sans-serif;
+    font-family: "Inter UI", -apple-system, sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 135%;
@@ -18,7 +19,7 @@ h1 {
 }
 
 h2 {
-    font-family: -apple-system, "Inter UI", sans-serif;
+    font-family: "Inter UI", -apple-system, sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 105%;
@@ -27,7 +28,7 @@ h2 {
 }
 
 h3 {
-    font-family: -apple-system, "Inter UI", sans-serif;
+    font-family: "Inter UI", -apple-system, sans-serif;
     font-size: 13px;
     font-weight: 700;
     line-height: 100%;
@@ -37,11 +38,16 @@ h3 {
 }
 
 p {
-    font-family: -apple-system, "Inter UI", sans-serif;
+    font-family: "Inter UI", -apple-system, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.60;
     margin-top: 0px;
     margin-bottom: 10px;
     text-transform: none;
+}
+
+.title {
+    font-size: 24px;
+    color: $primary-text;
 }
