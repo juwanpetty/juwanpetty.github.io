@@ -509,7 +509,7 @@ section {
       margin: 0 auto;
       margin-bottom: 1rem;
       line-height: 145%;
-      max-width: 430px; }
+      max-width: 450px; }
 
 .project-list {
   display: grid;
@@ -572,6 +572,11 @@ footer {
 
 .navigation {
   padding: 4rem 0; }
+
+.logo {
+  height: 36px;
+  width: 80px;
+  fill: #2B2B2B; }
 
 @media screen and (max-width: 1010px) {
   .navigation, .footer {
