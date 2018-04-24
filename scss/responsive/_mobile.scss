@@ -34,20 +34,6 @@
         .contact {
             margin-bottom: 3rem;
         }
-
-        .footer-links {
-            @include flex(flex-start, flex-start);
-            align-items: flex-start !important;
-            flex-direction: column;
-    
-            li {
-                margin: 0;
-    
-                &:not(:last-child) {
-                    margin-bottom: 2rem;
-                }
-            }
-        }
     }
 }
 
@@ -62,6 +48,20 @@
 
     .project-list {
         grid-template-columns: repeat(1, minmax(230px, 1fr));
+    }
+
+    .footer-links {
+        @include flex(flex-start, flex-start);
+        align-items: flex-start !important;
+        flex-direction: column;
+
+        li {
+            margin: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
     }
 }
 

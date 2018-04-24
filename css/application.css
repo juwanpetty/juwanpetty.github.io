@@ -606,23 +606,24 @@ footer {
     justify-content: flex-start;
     flex-direction: column; }
     footer .contact {
-      margin-bottom: 3rem; }
-    footer .footer-links {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      align-items: flex-start !important;
-      flex-direction: column; }
-      footer .footer-links li {
-        margin: 0; }
-        footer .footer-links li:not(:last-child) {
-          margin-bottom: 2rem; } }
+      margin-bottom: 3rem; } }
 @media screen and (max-width: 650px) {
   header .header-wrapper h1 {
     font-size: 32px; }
 
   .project-list {
-    grid-template-columns: repeat(1, minmax(230px, 1fr)); } }
+    grid-template-columns: repeat(1, minmax(230px, 1fr)); }
+
+  .footer-links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start !important;
+    flex-direction: column; }
+    .footer-links li {
+      margin: 0; }
+      .footer-links li:not(:last-child) {
+        margin-bottom: 2rem; } }
 @media screen and (max-width: 450px) {
   header .header-wrapper h1 {
     font-size: 24px;
