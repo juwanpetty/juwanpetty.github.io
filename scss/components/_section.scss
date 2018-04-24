@@ -88,6 +88,17 @@ section {
                 color: $primary-text;
             }
 
+            .project-tag {
+                font-size: 12px;
+                text-transform: uppercase;
+                color: $secondary-text;
+
+                span.blue-link {
+                    font-weight: 700;
+                    letter-spacing: 0.5px;
+                }
+            }
+
             .project-description {
                 margin: 0;
                 font-size: 16px;

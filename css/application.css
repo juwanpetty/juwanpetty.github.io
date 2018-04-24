@@ -536,6 +536,13 @@ section {
         letter-spacing: 0.25px;
         margin-bottom: 0.5rem;
         color: #2B2B2B; }
+      .project-list li a .project-tag {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #80878F; }
+        .project-list li a .project-tag span.blue-link {
+          font-weight: 700;
+          letter-spacing: 0.5px; }
       .project-list li a .project-description {
         margin: 0;
         font-size: 16px;
