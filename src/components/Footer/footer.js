@@ -1,11 +1,18 @@
 import React from "react"
+import { Link } from "gatsby"
 import styles from "./footer.module.scss"
 
 const Footer = () => {
   return (
-    <div>
-      <p>This is the footer component</p>
-    </div>
+    <footer className={styles.Footer}>
+      <div className={styles.FooterLinks}>
+        <Link to="/">Twitter</Link>
+        <Link to="/">Instagram</Link>
+        <Link to="/">Github</Link>
+        <Link to="/">Dribbble</Link>
+      </div>
+      <p>Made with love by Juwan Petty. &copy; {new Date().getFullYear()}</p>
+    </footer>
   )
 }
 
