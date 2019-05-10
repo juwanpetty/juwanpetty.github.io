@@ -1,0 +1,94 @@
+.Section {
+  margin-bottom: 10rem;
+
+  .SectionHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.2rem;
+
+    h1 {
+      margin: 0;
+      color: #121212;
+      font-size: 2.4rem;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: #888;
+      margin: 0;
+    }
+
+    a {
+      padding: 0.8rem 1.6rem;
+      text-decoration: none;
+      border-radius: 0.3rem;
+      background: #007aff;
+      font-size: 1.6rem;
+      margin-left: auto;
+      cursor: pointer;
+      color: white;
+      border: none;
+    }
+  }
+}
+
+.SectionList {
+  display: grid;
+  grid-gap: 1.6rem;
+  grid-template-columns: repeat(3, 35rem);
+}
+
+.SectionListItem {
+  padding: 1.6rem;
+  border-radius: 0.3rem;
+
+  .ImageWrapper {
+    margin-bottom: 1.6rem;
+  }
+
+  .Image {
+    width: 100%;
+    height: 200px;
+    background: #eee;
+    border-radius: 0.3rem;
+  }
+
+  .Meta {
+    padding: 0 1.6rem;
+
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 140%;
+      color: #2b2b2b;
+      margin: 0 0 1.6rem;
+    }
+
+    .Source {
+      color: #b7b7b7;
+      font-size: 1.2rem;
+      padding-top: 0;
+      margin: 0 0 0.8rem;
+    }
+
+    .Overflow {
+      overflow: hidden;
+      min-height: 10rem;
+      max-height: 10rem;
+    }
+
+    .Description {
+      color: #5e5e5e;
+      font-size: 1.4rem;
+      line-height: 150%;
+      margin: 0 0 3.2rem;
+    }
+
+    .Date {
+      font-size: 1.6rem;
+      color: #888;
+      margin: 0;
+    }
+  }
+}
