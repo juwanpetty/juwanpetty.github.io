@@ -1,51 +1,41 @@
-.Navigation {
-  padding: 1rem 0;
+.Header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
-.NavTitle {
+.Button {
+  background: none;
+  border: none;
   display: flex;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 2rem;
 
-  h1 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #121212;
+  svg {
+    color: #888;
+    transition: 150ms;
   }
 
-  .Available {
-    font-size: 1.6rem;
-    margin-left: 2.4rem;
-    color: #888;
+  &:hover svg {
+    color: #1a1a23;
+    transform: scale(1.15);
+  }
+
+  &:hover .GridIcon {
+    fill: #1a1a23;
   }
 }
 
-.NavLinks {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-
-  a {
-    padding: 0.8rem 0.8rem;
-    text-decoration: none;
-    margin-right: 0.8rem;
-    font-size: 1.6rem;
-    color: #888;
-
-    &.NavItemActive {
-      color: #121212;
-      font-weight: 600;
-    }
-  }
-
-  button {
-    padding: 0.8rem 1.6rem;
-    border-radius: 0.3rem;
-    background: #007aff;
-    font-size: 1.6rem;
-    cursor: pointer;
-    color: white;
-    border: none;
-  }
+.GridIcon {
+  color: #888;
+  fill: #888;
 }

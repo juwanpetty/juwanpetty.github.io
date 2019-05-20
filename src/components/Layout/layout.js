@@ -1,19 +1,32 @@
-import React from "react"
+import React, { useEffect } from "react"
 
-import Header from "../Header/header"
-import Footer from "../Footer/footer"
+import { Footer } from "../Footer/"
+import { Header } from "../Header"
+import { ContextProvider } from "../Context/Context"
+import { initCanvas, initHovers } from "../Cursor/cursor"
 
-import styles from "./layout.module.scss"
+import styles from "./Layout.module.scss"
+import "../Cursor/cursor.scss"
 
 const Layout = ({ children }) => {
+  useEffect(() => {
+    initCanvas()
+    initHovers()
+  })
+
   return (
-    <div className={styles.Container}>
-      <div className={styles.Content}>
-        <Header />
-        {children}
-      </div>
-      <Footer />
-    </div>
+    <>
+      <canvas class="canvas" data-paper-resize />
+      <ContextProvider>
+        <div className={styles.Container}>
+          <div className={styles.Content}>
+            <Header />
+            {children}
+          </div>
+          <Footer />
+        </div>
+      </ContextProvider>
+    </>
   )
 }
 

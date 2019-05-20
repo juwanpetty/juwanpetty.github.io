@@ -1,25 +1,32 @@
 .Footer {
-  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.Button {
+  background: none;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  padding: 2rem;
 
-  p {
-    font-size: 1.6rem;
-    margin-left: 3.2rem;
+  svg {
     color: #888;
+    transition: 150ms;
   }
-}
 
-.FooterLinks {
-  display: flex;
-  align-items: center;
-
-  a {
-    padding: 0.8rem 0.8rem;
-    text-decoration: none;
-    margin-right: 0.8rem;
-    font-size: 1.6rem;
-    color: #444;
+  &:hover svg {
+    color: #1a1a23;
+    transform: scale(1.15);
   }
 }
