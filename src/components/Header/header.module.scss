@@ -1,41 +1,33 @@
 .Header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
+  justify-content: flex-end;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 5rem;
-  font-size: 1.4rem;
-  font-weight: 500;
+  padding: 5rem 5rem 0;
 }
 
-.Button {
-  background: none;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 2rem;
+.Contact {
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  position: absolute;
+  right: -10rem;
 
-  svg {
-    color: #888;
-    transition: 150ms;
+  p {
+    margin-bottom: 0.4rem;
   }
 
-  &:hover svg {
-    color: #1a1a23;
-    transform: scale(1.15);
-  }
+  a,
+  p {
+    margin: 0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 17px;
+    color: #d1cfcf;
 
-  &:hover .GridIcon {
-    fill: #1a1a23;
+    /* identical to box height */
+    letter-spacing: 0.03em;
   }
-}
-
-.GridIcon {
-  color: #888;
-  fill: #888;
 }

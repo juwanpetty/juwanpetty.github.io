@@ -19,10 +19,8 @@ const Layout = ({ children }) => {
       <canvas class="canvas" data-paper-resize />
       <ContextProvider>
         <div className={styles.Container}>
-          <div className={styles.Content}>
-            <Header />
-            {children}
-          </div>
+          <Header />
+          {children}
           <Footer />
         </div>
       </ContextProvider>

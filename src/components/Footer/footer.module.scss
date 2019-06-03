@@ -2,31 +2,38 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 5rem;
-  font-size: 1.4rem;
-  font-weight: 500;
 }
 
-.Button {
-  background: none;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 2rem;
+.Archive {
+  padding-right: 2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #040c19;
+  text-decoration: none;
+  position: relative;
 
-  svg {
-    color: #888;
-    transition: 150ms;
+  span {
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #d1cfcf;
+    position: absolute;
+    right: 0;
+    top: -0.4rem;
   }
+}
 
-  &:hover svg {
-    color: #1a1a23;
-    transform: scale(1.15);
-  }
+.FooterLink {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #040c19;
+  text-decoration: none;
 }

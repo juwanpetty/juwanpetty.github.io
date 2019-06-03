@@ -1,13 +1,17 @@
 import React from "react"
-import { Moon } from "react-feather"
+import { Link } from "gatsby"
+
 import styles from "./Footer.module.scss"
 
 const Footer = () => {
   return (
     <footer className={styles.Footer}>
-      <button className={styles.Button} data-cursor>
-        <Moon size={20} />
-      </button>
+      <Link to="/about" data-cursor className={styles.FooterLink}>
+        About
+      </Link>
+      <Link to="/work" data-cursor className={styles.Archive}>
+        Archive <span>23</span>
+      </Link>
     </footer>
   )
 }

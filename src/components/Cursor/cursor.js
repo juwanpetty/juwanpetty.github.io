@@ -49,18 +49,24 @@ export function initCanvas() {
     // using linear interpolation, the circle will move 0.15 (15%)
     // of the distance between its current position and the mouse
     // coordinates per Frame
-    if (!isStuck) {
-      // move circle around normally
-      lastX = lerp(lastX, clientX, 0.2)
-      lastY = lerp(lastY, clientY, 0.2)
-      group.position = new paper.Point(lastX, lastY)
-    } else if (isStuck) {
-      // fixed position on a nav item
-      lastX = lerp(lastX, stuckX, 0.2)
-      lastY = lerp(lastY, stuckY, 0.2)
-      group.position = new paper.Point(lastX, lastY)
-    }
 
+    lastX = lerp(lastX, clientX, 0.2)
+    lastY = lerp(lastY, clientY, 0.2)
+    group.position = new paper.Point(lastX, lastY)
+
+    // if (!isStuck) {
+    //   // move circle around normally
+    //   lastX = lerp(lastX, clientX, 0.2)
+    //   lastY = lerp(lastY, clientY, 0.2)
+    //   group.position = new paper.Point(lastX, lastY)
+    // } else if (isStuck) {
+    //   // fixed position on a nav item
+    //   lastX = lerp(lastX, stuckX, 0.2)
+    //   lastY = lerp(lastY, stuckY, 0.2)
+    //   group.position = new paper.Point(lastX, lastY)
+    // }
+
+    // if (isStuck && polygon.bounds.width < shapeBounds.width) {
     if (isStuck && polygon.bounds.width < shapeBounds.width) {
       // scale up the shape
       polygon.scale(1.1)
