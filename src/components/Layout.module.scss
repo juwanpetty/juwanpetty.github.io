@@ -1,0 +1,114 @@
+@import url("https://rsms.me/inter/inter.css");
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 51.56%),
+    #faf6f1;
+}
+
+.Container {
+  margin: 0 auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Header {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5rem 5rem 0;
+}
+
+.Contact {
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  position: absolute;
+  right: -10rem;
+
+  p {
+    margin-bottom: 0.4rem;
+  }
+
+  a,
+  p {
+    margin: 0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 17px;
+    color: #d1cfcf;
+
+    /* identical to box height */
+    letter-spacing: 0.03em;
+  }
+}
+
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5rem;
+}
+
+.Archive {
+  padding-right: 2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #040c19;
+  text-decoration: none;
+  position: relative;
+
+  span {
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #d1cfcf;
+    position: absolute;
+    right: 0;
+    top: -0.4rem;
+  }
+}
+
+.FooterLink {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #040c19;
+  text-decoration: none;
+}

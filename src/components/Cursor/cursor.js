@@ -5,7 +5,7 @@ let clientY = -100
 let isStuck = false
 let lastX = 0
 let lastY = 0
-let group, stuckX, stuckY
+let group
 
 export function initCanvas() {
   document.addEventListener("mousemove", e => {
@@ -81,10 +81,10 @@ export const initHovers = () => {
   // find the center of the link element and set stuckX and stuckY
   // these are needed to set the position of the noisy circle
   const handleMouseEnter = e => {
-    const link = e.currentTarget
-    const linkBox = link.getBoundingClientRect()
-    stuckX = Math.round(linkBox.left + linkBox.width / 2)
-    stuckY = Math.round(linkBox.top + linkBox.height / 2)
+    // const link = e.currentTarget
+    // const linkBox = link.getBoundingClientRect()
+    // stuckX = Math.round(linkBox.left + linkBox.width / 2)
+    // stuckY = Math.round(linkBox.top + linkBox.height / 2)
     isStuck = true
   }
 

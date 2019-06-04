@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Layout } from "../components"
+import Layout from "../components/Layout"
 
 import styles from "./index.module.scss"
 import SelectedProjects from "../assets/selected-projects.svg"
