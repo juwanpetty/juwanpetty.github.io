@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "env-cmd": "^9.0.1",
+    "gh-pages": "^2.0.1",
     "prettier": "^1.17.0"
   },
   "repository": {
